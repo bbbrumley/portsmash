@@ -10,7 +10,7 @@ ecc: ecc.c
 	$(CC) -o $@ $< $(CFLAGS) -lcrypto -I$(OPENSSL_ROOT_DIR)/include -L$(OPENSSL_ROOT_DIR)/lib -Wl,-rpath=$(OPENSSL_ROOT_DIR)/lib
 
 clean:
-	rm -f spy ecc *~
+	rm -f spy ecc *~ *.pyc
 
 deepclean: clean
 	rm -f timings.bin data.bin data.sig secp384r1.pem

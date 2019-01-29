@@ -53,17 +53,25 @@ In the `ecc` tool case, `data.bin` and `secp384r1.pem` are meaningless and `data
 
 For the `taskset` commands in `sync.sh`, the cores need to be two logical cores of the same physical core; sanity check with
 
-    $ grep '^core id' /proc/cpuinfo
-    core id		: 0
-    core id		: 1
-    core id		: 2
-    core id		: 3
-    core id		: 0
-    core id		: 1
-    core id		: 2
-    core id		: 3
+    $ grep '^processor\|^core id' /proc/cpuinfo
+    processor : 0
+    core id   : 0
+    processor : 1
+    core id   : 1
+    processor : 2
+    core id   : 2
+    processor : 3
+    core id   : 3
+    processor : 4
+    core id   : 0
+    processor : 5
+    core id   : 1
+    processor : 6
+    core id   : 2
+    processor : 7
+    core id   : 3
 
-So the script is currently configured for logical cores 3 and 7 that both map to physical core 3 (`core_id`).
+So the script is currently configured for logical cores 3 and 7 (`processor`) that both map to physical core 3 (`core_id`).
 
 ## spy
 
@@ -87,7 +95,11 @@ You might have to adjust the `CEIL` variable if the plots are too aggressively c
 
 Python packages:
 
-    sudo apt-get install python-numpy python-matplotlib
+    sudo apt-get install python-numpy python-matplotlib python-scipy
+
+Optional but recommended to view peaks:
+
+    sudo pip install --upgrade scipy
 
 # Usage
 
@@ -112,10 +124,15 @@ You can play around with one victim at a time in `sync.sh`. Sample output for th
 
 # Credits
 
-* Alejandro Cabrera Aldaya (Universidad Tecnológica de la Habana (CUJAE), Habana, Cuba)
-* Billy Bob Brumley (Tampere University of Technology, Tampere, Finland)
-* Sohaib ul Hassan (Tampere University of Technology, Tampere, Finland)
-* Cesar Pereida García (Tampere University of Technology, Tampere, Finland)
-* Nicola Tuveri (Tampere University of Technology, Tampere, Finland)
+## Authors
 
+* Alejandro Cabrera Aldaya (Universidad Tecnológica de la Habana (CUJAE), Habana, Cuba)
+* Billy Bob Brumley (Tampere University, Tampere, Finland)
+* Sohaib ul Hassan (Tampere University, Tampere, Finland)
+* Cesar Pereida García (Tampere University, Tampere, Finland)
+* Nicola Tuveri (Tampere University, Tampere, Finland)
+
+## Funding
+
+This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement No 804476).
 
