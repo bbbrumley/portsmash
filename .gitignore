@@ -1,0 +1,5 @@
+*.bin
+*.pem
+ecc
+spy
+pipe.fifo
