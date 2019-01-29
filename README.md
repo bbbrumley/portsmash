@@ -6,6 +6,12 @@ More technical details about the PortSmash side-channel are available in [this m
 
 ![Alt text](parse_raw_simple.png?raw=true "sample PortSmash visualization tooling")
 
+# License
+
+This software is licensed under the terms of the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+Check [LICENSE](LICENSE) and [NOTICE](NOTICE) for more details.
+
 # Setup
 
 ## Prerequisites

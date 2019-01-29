@@ -1,0 +1,7 @@
+PortSmash Proof-of-Concept exploit
+Copyright 2018-2019 Alejandro Cabrera Aldaya, Billy Bob Brumley, Sohaib ul Hassan, Cesar Pereida García and Nicola Tuveri
+
+This product includes software developed at Tampere University (formerly
+Tampere University of Technology) to demonstrate the PortSmash
+side-channel technique (CVE-2018-5407) described in
+https://ia.cr/2018/1060 .
