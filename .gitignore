@@ -1,5 +1,6 @@
 *.bin
 *.pem
+*.sig
 ecc
 spy
 pipe.fifo

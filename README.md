@@ -1,10 +1,10 @@
 # Summary
 
-This is a proof-of-concept exploit of the PortSmash microarchitecture attack, tracked by CVE-2018-5407.
+This is a proof-of-concept exploit of the PortSmash microarchitecture attack, tracked by [CVE-2018-5407](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5407).
 
 More technical details about the PortSmash side-channel are available in [this manuscript](https://eprint.iacr.org/2018/1060).
 
-![Alt text](parse_raw_simple.png?raw=true "Title")
+![Alt text](parse_raw_simple.png?raw=true "sample PortSmash visualization tooling")
 
 # Setup
 
